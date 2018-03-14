@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('User/registration');
+});
+Route::post('/user/registration',function (){
+    return "hello";
 });
