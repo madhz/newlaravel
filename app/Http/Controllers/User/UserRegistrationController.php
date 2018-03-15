@@ -46,5 +46,8 @@ class UserRegistrationController extends BaseController
 
       }
   }
-
+  public function Show()
+  {
+      return view('User/registration');
+  }
 }
