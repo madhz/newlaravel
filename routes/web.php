@@ -14,6 +14,5 @@
 Route::get('/', function () {
     return view('User/registration');
 });
-Route::post('/user/registration',function (){
-    return "hello";
-});
+Route::get('/register','User\UserRegistrationController@Show');
+Route::post('/User/registration','User\UserRegistrationController@Create');
