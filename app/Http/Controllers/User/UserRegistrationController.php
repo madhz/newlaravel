@@ -18,6 +18,11 @@ class UserRegistrationController extends BaseController
 {
   public function Create(Request $request)
   {
+//      $result= User::create([
+//          'name' => $request->input('name'),
+//          'email' => $request->input('email'),
+//          'password' => Hash::make($request->input('password')),
+//      ]);
 
 //      return Validator::make(Input::all(), [
 //          'name' => 'required|string|max:255',
