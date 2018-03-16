@@ -49,6 +49,7 @@ class UserRegistrationController extends BaseController
   }
   public function Show()
   {
+      echo 'sdfsf';exit;
       return view('User/registration');
   }
 }
