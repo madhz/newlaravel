@@ -22,3 +22,11 @@ Route::post('/User/login','User\UserLoginController@login');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// route for view/blade file
+Route::get('paywithpaypal', array('as' => 'paywithpaypal','uses' => 'PaypalController@payWithPaypal',));
+// route for post request
+Route::post('paypal', array('as' => 'paypal','uses' => 'PaypalController@postPaymentWithpaypal',));
+// route for check status responce
+Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPaymentStatus',));
